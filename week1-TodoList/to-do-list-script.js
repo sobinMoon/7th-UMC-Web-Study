@@ -6,6 +6,7 @@ function enterInputText(){
   inputTextId.value = null;
 }
 
+// 할 일 텍스트 생성
 function makeNewListElement(text, listItem){
   const listItemName = document.createElement("div");
   listItemName.setAttribute("class", "listItemName");
@@ -13,6 +14,7 @@ function makeNewListElement(text, listItem){
   listItem.appendChild(listItemName);
 }
 
+// 완료 및 삭제 버튼 생성
 function makeNewButton(listItem, button, text){
   button.setAttribute("class", "listItemButton");
   var btnText = document.createTextNode(text)
@@ -57,6 +59,7 @@ function moveToList(selectedBtn){
   document.getElementById("completeList").appendChild(listItem); 
 }
 
+// 리스트에서 삭제
 function deleteFromList(deleteBtn){
   var li = deleteBtn.parentElement;
   li.remove();
