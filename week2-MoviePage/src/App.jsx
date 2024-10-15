@@ -8,7 +8,7 @@ function App() {
   const [filter, setFilter] = useState(false);
 
   // 왜 props.props로 접근해야 되는지?
-  // Thumbnails로 따로 빼기 전까지는 블랙이 단체로 적용됐었는데... 뭔차이지
+  // Thumbnail로 따로 빼기 전까지는 블랙이 단체로 적용됐었는데... 어떤 차이일까
   const Thumbnail = (props) => {
     return (
       <li key={props.id} className='itemContainer'>
